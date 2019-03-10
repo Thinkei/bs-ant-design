@@ -28,8 +28,8 @@ let make =
   );
 
 module Item = {
-  [@bs.module "antd/lib/breadcrumb/Item"]
-  external item: ReasonReact.reactClass = "default";
+  [@bs.scope "default"] [@bs.module "antd/lib/breadcrumb"]
+  external item: ReasonReact.reactClass = "Item";
   [@bs.obj]
   external makeProps:
     (

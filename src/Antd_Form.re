@@ -46,8 +46,8 @@ let make =
   );
 
 module Item = {
-  [@bs.module "antd/lib/form/FormItem"]
-  external item: ReasonReact.reactClass = "default";
+  [@bs.scope "default"] [@bs.module "antd/lib/select"]
+  external item: ReasonReact.reactClass = "Option";
   let make =
       (
         ~colon=?,

@@ -22,7 +22,7 @@ let make = (~value=?, ~defaultValue=?, ~onChange=?, ~className=?, children) =>
   );
 
 module Option = {
-  [@bs.module "antd/lib/select"]
+  [@bs.scope "default"] [@bs.module "antd/lib/select"]
   external reactClass: ReasonReact.reactClass = "Option";
 
   [@bs.obj] external makeProps: (~value: string, ~title: string=?) => _ = "";

@@ -19,7 +19,7 @@ let make = (~id=?, ~className=?, ~style=?, children) =>
   );
 
 module Header = {
-  [@bs.module "antd/lib/layout/Header"]
+  [@bs.module "antd/lib/layout"]
   external header: ReasonReact.reactClass = "default";
   let make = (~id=?, ~className=?, ~style=?, children) =>
     ReasonReact.wrapJsForReason(
@@ -30,8 +30,8 @@ module Header = {
 };
 
 module Footer = {
-  [@bs.module "antd/lib/layout/Footer"]
-  external footer: ReasonReact.reactClass = "default";
+  [@bs.scope "default"] [@bs.module "antd/lib/layout/layout"]
+  external footer: ReasonReact.reactClass = "Footer";
   let make = (~id=?, ~className=?, ~style=?, children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=footer,
@@ -41,8 +41,8 @@ module Footer = {
 };
 
 module Content = {
-  [@bs.module "antd/lib/layout/Content"]
-  external content: ReasonReact.reactClass = "default";
+  [@bs.scope "default"] [@bs.module "antd/lib/layout/layout"]
+  external content: ReasonReact.reactClass = "Content";
   let make = (~id=?, ~className=?, ~style=?, children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=content,

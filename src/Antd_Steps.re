@@ -25,8 +25,8 @@ let make = (~status=?, ~current=?, ~style=?, children) =>
   );
 
 module Step = {
-  [@bs.module "antd/lib/steps/Step"]
-  external reactClass: ReasonReact.reactClass = "default";
+  [@bs.scope "default"] [@bs.module "antd/lib/steps"]
+  external reactClass: ReasonReact.reactClass = "Step";
 
   [@bs.obj]
   external makeProps: (~title: string, ~description: string=?, unit) => _ = "";

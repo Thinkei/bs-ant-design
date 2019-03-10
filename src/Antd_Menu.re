@@ -172,8 +172,8 @@ module SubMenu = {
 };
 
 module ItemGroup = {
-  [@bs.module "antd/lib/menu/ItemGroup"]
-  external itemGroup: ReasonReact.reactClass = "default";
+  [@bs.scope "default"] [@bs.module "antd/lib/menu"]
+  external itemGroup: ReasonReact.reactClass = "ItemGroup";
   [@bs.obj]
   external makeProps:
     (
@@ -194,8 +194,8 @@ module ItemGroup = {
 };
 
 module Divider = {
-  [@bs.module "antd/lib/menu/Divider"]
-  external divider: ReasonReact.reactClass = "default";
+  [@bs.scope "default"] [@bs.module "antd/lib/menu"]
+  external divider: ReasonReact.reactClass = "Divider";
   [@bs.obj]
   external makeProps:
     (
