@@ -1,4 +1,5 @@
-[@bs.module] external reactClass: ReasonReact.reactClass = "antd/lib/divider";
+[@bs.module "antd/lib/divider"]
+external reactClass: ReasonReact.reactClass = "default";
 
 [%bs.raw {|require("antd/lib/divider/style")|}];
 

@@ -1,5 +1,5 @@
-[@bs.module]
-external autoComplete: ReasonReact.reactClass = "antd/lib/auto-complete";
+[@bs.module "antd/lib/auto-complete"]
+external autoComplete: ReasonReact.reactClass = "default";
 
 [%bs.raw {|require("antd/lib/auto-complete/style")|}];
 

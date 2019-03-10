@@ -1,4 +1,5 @@
-[@bs.module] external select: ReasonReact.reactClass = "antd/lib/select";
+[@bs.module "antd/lib/select"]
+external select: ReasonReact.reactClass = "default";
 
 [%bs.raw {|require("antd/lib/select/style")|}];
 

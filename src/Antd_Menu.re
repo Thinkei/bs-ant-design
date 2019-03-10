@@ -1,4 +1,4 @@
-[@bs.module] external menu: ReasonReact.reactClass = "antd/lib/menu";
+[@bs.module "antd/lib/menu"] external menu: ReasonReact.reactClass = "default";
 
 [%bs.raw {|require("antd/lib/menu/style")|}];
 

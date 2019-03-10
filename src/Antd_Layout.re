@@ -1,6 +1,7 @@
 open Antd_Helpers;
 
-[@bs.module] external layout: ReasonReact.reactClass = "antd/lib/layout";
+[@bs.module "antd/lib/layout"]
+external layout: ReasonReact.reactClass = "default";
 
 [%bs.raw {|require("antd/lib/layout/style")|}];
 

@@ -1,5 +1,5 @@
-[@bs.module]
-external breadcrumb: ReasonReact.reactClass = "antd/lib/breadcrumb";
+[@bs.module "antd/lib/breadcrumb"]
+external breadcrumb: ReasonReact.reactClass = "default";
 
 [%bs.raw {|require("antd/lib/breadcrumb/style")|}];
 
