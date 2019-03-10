@@ -103,7 +103,7 @@ let make =
   );
 
 module Item = {
-  [@bs.module "antd/lib/menu/Item"]
+  [@bs.module "antd/lib/menu/MenuItem"]
   external item: ReasonReact.reactClass = "default";
   [@bs.obj]
   external makeProps:
