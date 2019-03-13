@@ -49,7 +49,7 @@ let make =
   );
 
 module Group = {
-  [@bs.module "antd/lib/radio/Group"]
+  [@bs.module "antd/lib/radio/group"]
   external reactClass: ReasonReact.reactClass = "default";
   [@bs.deriving jsConverter]
   type size = [ | `default | `small | `large];
