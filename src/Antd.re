@@ -35,3 +35,5 @@ module Tabs = Antd_Tabs;
 module Table = Antd_Table;
 
 module Modal = Antd_Modal;
+
+module Popconfirm = Antd_Popconfirm;
