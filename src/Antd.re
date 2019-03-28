@@ -39,3 +39,5 @@ module Modal = Antd_Modal;
 module Popconfirm = Antd_Popconfirm;
 
 module Tooltip = Antd_Tooltip;
+
+module message = Antd_message;
