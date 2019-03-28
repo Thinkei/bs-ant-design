@@ -29,7 +29,7 @@ let make =
       children,
     ) => {
   ReasonReact.wrapJsForReason(
-    ~reactClass=modalpopconfirm,
+    ~reactClass=popconfirm,
     ~props=
       makeProps(
         ~title,
