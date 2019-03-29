@@ -40,4 +40,4 @@ module Popconfirm = Antd_Popconfirm;
 
 module Tooltip = Antd_Tooltip;
 
-module Message = Antd_Message;
+module Message = Antd_message;
