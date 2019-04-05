@@ -31,6 +31,7 @@ external makeProps:
     ~maskClosable: bool=?,
     ~maskStyle: ReactDOMRe.Style.t=?,
     ~keyboard: bool=?,
+    ~confirmLoading: bool=?,
     unit
   ) =>
   _ =
@@ -64,6 +65,7 @@ let make =
       ~maskClosable=?,
       ~maskStyle=?,
       ~keyboard=?,
+      ~confirmLoading=?,
       children,
     ) => {
   ReasonReact.wrapJsForReason(
@@ -96,6 +98,7 @@ let make =
         ~maskClosable?,
         ~maskStyle?,
         ~keyboard?,
+        ~confirmLoading?,
         (),
       ),
     children,
