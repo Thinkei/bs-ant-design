@@ -19,8 +19,8 @@ let make = (~id=?, ~className=?, ~style=?, children) =>
   );
 
 module Header = {
-  [@bs.module "antd/lib/layout"]
-  external header: ReasonReact.reactClass = "default";
+  [@bs.scope "default"] [@bs.module "antd/lib/layout/layout"]
+  external header: ReasonReact.reactClass = "Header";
   let make = (~id=?, ~className=?, ~style=?, children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=header,
