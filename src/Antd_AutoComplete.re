@@ -28,7 +28,7 @@ let make =
       ~onPressEnter=?,
       ~className=?,
       ~style=?,
-      children,
+      ~children,
     ) =>
   ReasonReact.wrapJsForReason(
     ~reactClass=autoComplete,
@@ -58,7 +58,7 @@ module TextArea = {
         ~onBlur=?,
         ~className=?,
         ~style=?,
-        children,
+        ~children,
       ) =>
     ReasonReact.wrapJsForReason(
       ~reactClass,

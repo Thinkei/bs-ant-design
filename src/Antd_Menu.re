@@ -71,7 +71,7 @@ let make =
       ~inlineCollapsed=?,
       ~id=?,
       ~style=?,
-      children,
+      ~children,
     ) =>
   ReasonReact.wrapJsForReason(
     ~reactClass=menu,
@@ -117,7 +117,7 @@ module Item = {
     ) =>
     _ =
     "";
-  let make = (~disabled=?, ~key_=?, ~id=?, ~className=?, ~style=?, children) =>
+  let make = (~disabled=?, ~key_=?, ~id=?, ~className=?, ~style=?, ~children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=item,
       ~props=
@@ -152,7 +152,7 @@ module SubMenu = {
         ~id=?,
         ~className=?,
         ~style=?,
-        children,
+        ~children,
       ) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=subMenu,
@@ -185,7 +185,7 @@ module ItemGroup = {
     ) =>
     _ =
     "";
-  let make = (~id=?, ~className=?, ~style=?, ~title=?, children) =>
+  let make = (~id=?, ~className=?, ~style=?, ~title=?, ~children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=itemGroup,
       ~props=makeProps(~title?, ~id?, ~className?, ~style?, ()),
@@ -206,7 +206,7 @@ module Divider = {
     ) =>
     _ =
     "";
-  let make = (~id=?, ~className=?, ~style=?, children) =>
+  let make = (~id=?, ~className=?, ~style=?, ~children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=divider,
       ~props=makeProps(~id?, ~className?, ~style?, ()),

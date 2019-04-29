@@ -11,7 +11,7 @@ external makeProps:
   _ =
   "";
 
-let make = (~id=?, ~className=?, ~style=?, children) =>
+let make = (~id=?, ~className=?, ~style=?, ~children) =>
   ReasonReact.wrapJsForReason(
     ~reactClass=layout,
     ~props=makeProps(~id?, ~className?, ~style?, ()),
@@ -21,7 +21,7 @@ let make = (~id=?, ~className=?, ~style=?, children) =>
 module Header = {
   [@bs.module "antd/lib/layout"]
   external header: ReasonReact.reactClass = "default";
-  let make = (~id=?, ~className=?, ~style=?, children) =>
+  let make = (~id=?, ~className=?, ~style=?, ~children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=header,
       ~props=makeProps(~id?, ~className?, ~style?, ()),
@@ -32,7 +32,7 @@ module Header = {
 module Footer = {
   [@bs.scope "default"] [@bs.module "antd/lib/layout/layout"]
   external footer: ReasonReact.reactClass = "Footer";
-  let make = (~id=?, ~className=?, ~style=?, children) =>
+  let make = (~id=?, ~className=?, ~style=?, ~children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=footer,
       ~props=makeProps(~id?, ~className?, ~style?, ()),
@@ -43,7 +43,7 @@ module Footer = {
 module Content = {
   [@bs.scope "default"] [@bs.module "antd/lib/layout/layout"]
   external content: ReasonReact.reactClass = "Content";
-  let make = (~id=?, ~className=?, ~style=?, children) =>
+  let make = (~id=?, ~className=?, ~style=?, ~children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=content,
       ~props=makeProps(~id?, ~className?, ~style?, ()),
@@ -89,7 +89,7 @@ module Sider = {
         ~width=?,
         ~collapsedWidth=?,
         ~breakpoint=?,
-        children,
+        ~children,
       ) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=sider,

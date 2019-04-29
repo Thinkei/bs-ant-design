@@ -14,7 +14,7 @@ external makeProps:
   ) =>
   _ =
   "";
-let make = (~value=?, ~defaultValue=?, ~onChange=?, ~className=?, children) =>
+let make = (~value=?, ~defaultValue=?, ~onChange=?, ~className=?, ~children) =>
   ReasonReact.wrapJsForReason(
     ~reactClass=select,
     ~props=makeProps(~value?, ~defaultValue?, ~onChange?, ~className?, ()),

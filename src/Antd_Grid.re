@@ -71,7 +71,7 @@ module Row = {
         ~justify=?,
         ~style=?,
         ~prefixCls=?,
-        children,
+        ~children,
       ) =>
     ReasonReact.wrapJsForReason(
       ~reactClass,
@@ -151,7 +151,7 @@ module Col = {
         ~xxl=?,
         ~prefixCls=?,
         ~style=?,
-        children,
+        ~children,
       ) =>
     ReasonReact.wrapJsForReason(
       ~reactClass,

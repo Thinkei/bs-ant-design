@@ -8,7 +8,7 @@ let make =
       ~onClick=?,
       ~spin=?,
       ~style=?,
-      _children,
+      ~children,
     ) => {
   ...component,
   render: _ => {

@@ -29,7 +29,7 @@ let make =
       ~id=?,
       ~className=?,
       ~style=?,
-      children,
+      ~children,
     ) =>
   ReasonReact.wrapJsForReason(
     ~reactClass,
@@ -101,6 +101,6 @@ module Group = {
           ~style?,
           (),
         ),
-      children,
+      ~children,
     );
 };

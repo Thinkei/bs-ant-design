@@ -39,7 +39,7 @@ let make =
       ~className=?,
       ~style=?,
       ~placeholder=?,
-      children,
+      ~children,
     ) =>
   ReasonReact.wrapJsForReason(
     ~reactClass=input,
@@ -75,7 +75,7 @@ module TextArea = {
         ~className=?,
         ~style=?,
         ~placeholder=?,
-        children,
+        ~children,
       ) =>
     ReasonReact.wrapJsForReason(
       ~reactClass,

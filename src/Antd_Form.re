@@ -29,7 +29,7 @@ let make =
       ~id=?,
       ~className=?,
       ~style=?,
-      children,
+      ~children,
     ) =>
   ReasonReact.wrapJsForReason(
     ~reactClass=form,
@@ -60,7 +60,7 @@ module Item = {
         ~id=?,
         ~help=?,
         ~hasFeedback=?,
-        children,
+        ~children,
       ) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=item,

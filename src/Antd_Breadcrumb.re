@@ -42,7 +42,7 @@ module Item = {
     ) =>
     _ =
     "";
-  let make = (~separator=?, ~href=?, ~id=?, ~className=?, ~style=?, children) =>
+  let make = (~separator=?, ~href=?, ~id=?, ~className=?, ~style=?, ~children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=item,
       ~props=makeProps(~separator?, ~href?, ~id?, ~className?, ~style?, ()),

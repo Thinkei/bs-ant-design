@@ -11,7 +11,7 @@ external makeProps:
   (~status: string=?, ~current: int=?, ~style: ReactDOMRe.Style.t=?, unit) => _ =
   "";
 
-let make = (~status=?, ~current=?, ~style=?, children) =>
+let make = (~status=?, ~current=?, ~style=?, ~children) =>
   ReasonReact.wrapJsForReason(
     ~reactClass,
     ~props=
@@ -30,7 +30,7 @@ module Step = {
 
   [@bs.obj]
   external makeProps: (~title: string, ~description: string=?, unit) => _ = "";
-  let make = (~title, ~description=?, children) =>
+  let make = (~title, ~description=?, ~children) =>
     ReasonReact.wrapJsForReason(
       ~reactClass,
       ~props=makeProps(~title, ~description?, ()),
