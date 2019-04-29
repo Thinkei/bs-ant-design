@@ -64,7 +64,7 @@ let make =
       ~maskClosable=?,
       ~maskStyle=?,
       ~keyboard=?,
-      ~children,
+      ~children=?,
     ) => {
   ReasonReact.wrapJsForReason(
     ~reactClass=modal,

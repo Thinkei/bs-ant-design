@@ -29,7 +29,7 @@ external makeProps:
   _ =
   "";
 
-let make = (~title, ~overlay=?, ~placement=?, ~children) => {
+let make = (~title, ~overlay=?, ~placement=?, ~children=?) => {
   ReasonReact.wrapJsForReason(
     ~reactClass=tooltip,
     ~props=

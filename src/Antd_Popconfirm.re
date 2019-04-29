@@ -26,7 +26,7 @@ let make =
       ~okType=?,
       ~cancelText=?,
       ~onVisibleChange=?,
-      ~children,
+      ~children=?,
     ) => {
   ReasonReact.wrapJsForReason(
     ~reactClass=popconfirm,

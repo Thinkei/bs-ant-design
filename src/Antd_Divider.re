@@ -19,7 +19,7 @@ external makeProps:
   _ =
   "";
 
-let make = (~_type=?, ~dash=?, ~id=?, ~className=?, ~style=?, ~children) =>
+let make = (~_type=?, ~dash=?, ~id=?, ~className=?, ~style=?, ~children=?) =>
   ReasonReact.wrapJsForReason(
     ~reactClass,
     ~props=

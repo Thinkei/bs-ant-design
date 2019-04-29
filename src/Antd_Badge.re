@@ -40,7 +40,7 @@ let make =
       ~title=?,
       ~scrollNumberPrefixCls=?,
       ~offset=?,
-      ~children,
+      ~children=?,
     ) =>
   ReasonReact.wrapJsForReason(
     ~reactClass,

@@ -69,7 +69,7 @@ let make =
       ~prefixCls=?,
       ~className=?,
       ~tabBarGutter=?,
-      ~children,
+      ~children=?,
     ) =>
   ReasonReact.wrapJsForReason(
     ~reactClass=tabs,
@@ -130,7 +130,7 @@ module TabPane = {
         ~disabled=?,
         ~forceRender=?,
         ~key=?,
-        ~children,
+        ~children=?,
       ) =>
     ReasonReact.wrapJsForReason(
       ~reactClass=tabpane,

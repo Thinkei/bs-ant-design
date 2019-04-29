@@ -61,7 +61,7 @@ let make =
       ~rowKey=?,
       ~dataSource,
       ~columns,
-      ~children,
+      ~children=?,
     ) =>
   ReasonReact.wrapJsForReason(
     ~reactClass=table,

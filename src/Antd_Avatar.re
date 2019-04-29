@@ -37,7 +37,7 @@ let make =
       ~id=?,
       ~className=?,
       ~style=?,
-      ~children,
+      ~children=?,
     ) =>
   ReasonReact.wrapJsForReason(
     ~reactClass,
